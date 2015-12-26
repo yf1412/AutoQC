@@ -3,8 +3,8 @@ from cotede_qc.cotede_test import get_qc
 def test(p):
     '''Run the RoC QC from the CoTeDe config.'''
 
-    config   = {'TEMP': {'RoC': 4}}
-    testname = 'RoC'
+    config   = {'TEMP': {'rate_of_change': 4}}
+    testname = 'rate_of_change'
 
     return get_qc(p, config, testname)
 
